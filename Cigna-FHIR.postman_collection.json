@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "467837ce-34d5-46da-9f25-584c869ba864",
+		"name": "Cigna-FHIR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4949594"
+	},
+	"item": [
+		{
+			"name": "Capability Statement Copy",
+			"item": [
+				{
+					"name": "Get Capability Statement",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://p-hi2.digitaledge.cigna.com/ProviderDirectory/v1/metadata",
+							"protocol": "https",
+							"host": [
+								"p-hi2",
+								"digitaledge",
+								"cigna",
+								"com"
+							],
+							"path": [
+								"ProviderDirectory",
+								"v1",
+								"metadata"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "Get Patient",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJqa3UiOiJodHRwczovL3ItaGkyLmNpZ25hLmNvbS9tZ2Evc3BzL29hdXRoL29hdXRoMjAvandrcy9oaTJfY2xpZW50X2RlZiIsImtpZCI6Im16MUUtUFpuM1E1X2JxTmpGdC1GUklFeXRwM1IxeVpSMG5fVjQ0czRmZDgiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzA4MzczODUsInN1YiI6IkEwMDAwMDAwMDAwMDAwMSIsImF1ZCI6ImhpMl9jbGllbnQiLCJleHAiOjE2NzA4MzkxODUsImlzcyI6InItaGkyLmNpZ25hLmNvbSIsImh0dHBzOi8vaGkyLmNpZ25hLmNvbSI6eyJlbnRlcnByaXNlSWQiOiJBMDAwMDAwMDAwMDAwMDEiLCJhdXRob3JpemVyRW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwicm9sZSI6IlNFTEYifSwiY2lnbmEuZW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwiY2lnbmEuYXV0aG9yaXplckVudGVycHJpc2VJZCI6IkEwMDAwMDAwMDAwMDAwMSIsImNpZ25hLnJvbGUiOiJTRUxGIiwiZW50LnZlciI6MSwiZW50LmFwcE5hbWUiOiJDaWduYSBISTIiLCJlbnQudG9rZW5UeXBlIjoidXNlciIsImVudC5lbnYiOiJyZWwiLCJzY29wZSI6InBhdGllbnQvKi5yZWFkIG9wZW5pZCBmaGlyVXNlciIsImNsaWVudCI6ImQzNGMxMDkwLWU1NjgtNDJkNy1hZDMxLWJiYTFkMzk5ZGMzMiJ9.psh2L1x9WEkEWaKTPJZpCDViPoWqm0NgXHvCx7RWavZJ-16cPpkrvuw5QuojCnHsirFwwqNdJ652hLQ9KjbA9z9YvrzqhPx231hx9UZCOGwJK1Ty_YaVuP-Mdvf0GARzlOYIid7JwU_nIkJr806UaUpASMmf6MEI3ODWjx6KxpLnDh2Us7APjDtB1TwR5RYNyBUi5cV6JVTIVZCrJWIus0gbukRirIj7jElRKwZkpi78xtZjj34igtpjV3bHXmrpbtpKKPBWU4Scp7uSC_nqehW3pazXQZwfaoINDtbKmthfhjmUhYuq0YI66EL_s3C2_eNhVJDWKHJqFiU9tg_fIg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{cigna_fhir_api\n}}/Patient/",
+							"host": [
+								"{{cigna_fhir_api\n}}"
+							],
+							"path": [
+								"Patient",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ExplanationOfBenefit",
+			"item": [
+				{
+					"name": "Get EOB",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJqa3UiOiJodHRwczovL3ItaGkyLmNpZ25hLmNvbS9tZ2Evc3BzL29hdXRoL29hdXRoMjAvandrcy9oaTJfY2xpZW50X2RlZiIsImtpZCI6Im16MUUtUFpuM1E1X2JxTmpGdC1GUklFeXRwM1IxeVpSMG5fVjQ0czRmZDgiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzA4MzczODUsInN1YiI6IkEwMDAwMDAwMDAwMDAwMSIsImF1ZCI6ImhpMl9jbGllbnQiLCJleHAiOjE2NzA4MzkxODUsImlzcyI6InItaGkyLmNpZ25hLmNvbSIsImh0dHBzOi8vaGkyLmNpZ25hLmNvbSI6eyJlbnRlcnByaXNlSWQiOiJBMDAwMDAwMDAwMDAwMDEiLCJhdXRob3JpemVyRW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwicm9sZSI6IlNFTEYifSwiY2lnbmEuZW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwiY2lnbmEuYXV0aG9yaXplckVudGVycHJpc2VJZCI6IkEwMDAwMDAwMDAwMDAwMSIsImNpZ25hLnJvbGUiOiJTRUxGIiwiZW50LnZlciI6MSwiZW50LmFwcE5hbWUiOiJDaWduYSBISTIiLCJlbnQudG9rZW5UeXBlIjoidXNlciIsImVudC5lbnYiOiJyZWwiLCJzY29wZSI6InBhdGllbnQvKi5yZWFkIG9wZW5pZCBmaGlyVXNlciIsImNsaWVudCI6ImQzNGMxMDkwLWU1NjgtNDJkNy1hZDMxLWJiYTFkMzk5ZGMzMiJ9.psh2L1x9WEkEWaKTPJZpCDViPoWqm0NgXHvCx7RWavZJ-16cPpkrvuw5QuojCnHsirFwwqNdJ652hLQ9KjbA9z9YvrzqhPx231hx9UZCOGwJK1Ty_YaVuP-Mdvf0GARzlOYIid7JwU_nIkJr806UaUpASMmf6MEI3ODWjx6KxpLnDh2Us7APjDtB1TwR5RYNyBUi5cV6JVTIVZCrJWIus0gbukRirIj7jElRKwZkpi78xtZjj34igtpjV3bHXmrpbtpKKPBWU4Scp7uSC_nqehW3pazXQZwfaoINDtbKmthfhjmUhYuq0YI66EL_s3C2_eNhVJDWKHJqFiU9tg_fIg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{cigna_fhir_api\n}}/ExplanationOfBenefit?_id=ifp-05ba16485f6baeb45115f2a379983a41&_include=ExplanationOfBenefit:",
+							"host": [
+								"{{cigna_fhir_api\n}}"
+							],
+							"path": [
+								"ExplanationOfBenefit"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "ifp-05ba16485f6baeb45115f2a379983a41"
+								},
+								{
+									"key": "_include",
+									"value": "ExplanationOfBenefit:"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get EOB for patient",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJqa3UiOiJodHRwczovL3ItaGkyLmNpZ25hLmNvbS9tZ2Evc3BzL29hdXRoL29hdXRoMjAvandrcy9oaTJfY2xpZW50X2RlZiIsImtpZCI6Im16MUUtUFpuM1E1X2JxTmpGdC1GUklFeXRwM1IxeVpSMG5fVjQ0czRmZDgiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzA4MzA0MTAsInN1YiI6IkEwMDAwMDAwMDAwMDAwMSIsImF1ZCI6ImhpMl9jbGllbnQiLCJleHAiOjE2NzA4MzIyMTAsImlzcyI6InItaGkyLmNpZ25hLmNvbSIsImh0dHBzOi8vaGkyLmNpZ25hLmNvbSI6eyJlbnRlcnByaXNlSWQiOiJBMDAwMDAwMDAwMDAwMDEiLCJhdXRob3JpemVyRW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwicm9sZSI6IlNFTEYifSwiY2lnbmEuZW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwiY2lnbmEuYXV0aG9yaXplckVudGVycHJpc2VJZCI6IkEwMDAwMDAwMDAwMDAwMSIsImNpZ25hLnJvbGUiOiJTRUxGIiwiZW50LnZlciI6MSwiZW50LmFwcE5hbWUiOiJDaWduYSBISTIiLCJlbnQudG9rZW5UeXBlIjoidXNlciIsImVudC5lbnYiOiJyZWwiLCJzY29wZSI6InBhdGllbnQvKi5yZWFkIG9wZW5pZCBmaGlyVXNlciIsImNsaWVudCI6ImQzNGMxMDkwLWU1NjgtNDJkNy1hZDMxLWJiYTFkMzk5ZGMzMiJ9.k0_Pl4VjIESoWgPdTwZuD14xOHGcxlB4ymE2sv9afWSmQH4xye26pYAjcN1sWQiDmiY4P-6FtlcgZ6h--Gcm04WJPXa7cGUeeFeWAXaKU7N8cY6_nNbzyJ_Hl_bwlFlg6X1e4RVkkIS0FC-jAMgocOTuJiKq9L9xL2NlMYxTAQ60T8DgfjJPUv7gY4HwOrX5TFC1kqQcK4OH6qFzT6_uQqP6ZuduEfc_hhC8hYqOP-EePs-R9gJzXWrgEHzqj2oqSmKU6I3cjUM8POmbDdGVQEFURqvR_DgTiemmj7jbc-xBHSmCU7_2_xAsiPhcorpIFHLOcml1HCyAioA8z0Vk9w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{cigna_fhir_api\n}}/ExplanationOfBenefit?patient=gov-8972693f-069b-4714-82f9-f805ebf7800f",
+							"host": [
+								"{{cigna_fhir_api\n}}"
+							],
+							"path": [
+								"ExplanationOfBenefit"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "gov-8972693f-069b-4714-82f9-f805ebf7800f"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Token Generation",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "d38fa3d0-7f23-48bf-a91b-2f51b6fa7851",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "d34c1090-e568-42d7-ad31-bba1d399dc32",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://example.com",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://r-hi2.cigna.com/mga/sps/oauth/oauth20/authorize",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://r-hi2.cigna.com/mga/sps/oauth/oauth20/token",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "state",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "openid fhirUser patient/*.read",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Cigna ",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
