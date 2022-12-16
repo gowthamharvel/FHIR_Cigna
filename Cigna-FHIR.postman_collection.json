@@ -41,7 +41,10 @@
 					"name": "Get Medication Knowledge",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": []
 				}
@@ -61,7 +64,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "eyJqa3UiOiJodHRwczovL3ItaGkyLmNpZ25hLmNvbS9tZ2Evc3BzL29hdXRoL29hdXRoMjAvandrcy9oaTJfY2xpZW50X2RlZiIsImtpZCI6Im16MUUtUFpuM1E1X2JxTmpGdC1GUklFeXRwM1IxeVpSMG5fVjQ0czRmZDgiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzA4MzczODUsInN1YiI6IkEwMDAwMDAwMDAwMDAwMSIsImF1ZCI6ImhpMl9jbGllbnQiLCJleHAiOjE2NzA4MzkxODUsImlzcyI6InItaGkyLmNpZ25hLmNvbSIsImh0dHBzOi8vaGkyLmNpZ25hLmNvbSI6eyJlbnRlcnByaXNlSWQiOiJBMDAwMDAwMDAwMDAwMDEiLCJhdXRob3JpemVyRW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwicm9sZSI6IlNFTEYifSwiY2lnbmEuZW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwiY2lnbmEuYXV0aG9yaXplckVudGVycHJpc2VJZCI6IkEwMDAwMDAwMDAwMDAwMSIsImNpZ25hLnJvbGUiOiJTRUxGIiwiZW50LnZlciI6MSwiZW50LmFwcE5hbWUiOiJDaWduYSBISTIiLCJlbnQudG9rZW5UeXBlIjoidXNlciIsImVudC5lbnYiOiJyZWwiLCJzY29wZSI6InBhdGllbnQvKi5yZWFkIG9wZW5pZCBmaGlyVXNlciIsImNsaWVudCI6ImQzNGMxMDkwLWU1NjgtNDJkNy1hZDMxLWJiYTFkMzk5ZGMzMiJ9.psh2L1x9WEkEWaKTPJZpCDViPoWqm0NgXHvCx7RWavZJ-16cPpkrvuw5QuojCnHsirFwwqNdJ652hLQ9KjbA9z9YvrzqhPx231hx9UZCOGwJK1Ty_YaVuP-Mdvf0GARzlOYIid7JwU_nIkJr806UaUpASMmf6MEI3ODWjx6KxpLnDh2Us7APjDtB1TwR5RYNyBUi5cV6JVTIVZCrJWIus0gbukRirIj7jElRKwZkpi78xtZjj34igtpjV3bHXmrpbtpKKPBWU4Scp7uSC_nqehW3pazXQZwfaoINDtbKmthfhjmUhYuq0YI66EL_s3C2_eNhVJDWKHJqFiU9tg_fIg",
+											"value": "eyJqa3UiOiJodHRwczovL3ItaGkyLmNpZ25hLmNvbS9tZ2Evc3BzL29hdXRoL29hdXRoMjAvandrcy9oaTJfY2xpZW50X2RlZiIsImtpZCI6Im16MUUtUFpuM1E1X2JxTmpGdC1GUklFeXRwM1IxeVpSMG5fVjQ0czRmZDgiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzExODg5MDMsInN1YiI6IkEwMDAwMDAwMDAwMDAwMSIsImF1ZCI6ImhpMl9jbGllbnQiLCJleHAiOjE2NzExOTA3MDMsImlzcyI6InItaGkyLmNpZ25hLmNvbSIsImh0dHBzOi8vaGkyLmNpZ25hLmNvbSI6eyJlbnRlcnByaXNlSWQiOiJBMDAwMDAwMDAwMDAwMDEiLCJhdXRob3JpemVyRW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwicm9sZSI6IlNFTEYifSwiY2lnbmEuZW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwiY2lnbmEuYXV0aG9yaXplckVudGVycHJpc2VJZCI6IkEwMDAwMDAwMDAwMDAwMSIsImNpZ25hLnJvbGUiOiJTRUxGIiwiZW50LnZlciI6MSwiZW50LmFwcE5hbWUiOiJDaWduYSBISTIiLCJlbnQudG9rZW5UeXBlIjoidXNlciIsImVudC5lbnYiOiJyZWwiLCJzY29wZSI6InBhdGllbnQvKi5yZWFkIG9wZW5pZCBmaGlyVXNlciIsImNsaWVudCI6ImQzNGMxMDkwLWU1NjgtNDJkNy1hZDMxLWJiYTFkMzk5ZGMzMiJ9.r5aeK9RXOWZ9x30cYnu9N7c6SbnILcC20_tZU8dGu1NEnd4XfcJNtlhTgJAXnuPABt5rIevB8jI2jEAw_HGiAjHnbpAR4TIcb-rVipVEubrt4bwu2DTvTgShP3p2rekGrTs6B1PUs-bcNdxpjnfdj6cdXyvGwvgyhaT28miVq9oVaZCFlScjps8A_t9T_M9M8dk2i2BBVP8TXYh0jVv8ElkrJM7sVmloAfI5aM3IGLwz-kW-aDRtOruncnlS-wZJIy_xotmf2FpKyuXJbuoQdCGaIsocsq-uSbxXfIodIu7_m2o6ugPJFmmR8K1Ondvnfm7Umb60Bn9pjFKyl8sWBw",
 											"type": "string"
 										}
 									]
@@ -69,13 +72,18 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{cigna_fhir_api\n}}/Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f",
+									"raw": "{{cigna_fhir_api\n}}/Patient?_lastUpdated=gt2013-01-14T10:00",
 									"host": [
 										"{{cigna_fhir_api\n}}"
 									],
 									"path": [
-										"Patient",
-										"gov-8972693f-069b-4714-82f9-f805ebf7800f"
+										"Patient"
+									],
+									"query": [
+										{
+											"key": "_lastUpdated",
+											"value": "gt2013-01-14T10:00"
+										}
 									]
 								}
 							},
@@ -89,8 +97,28 @@
 						{
 							"name": "Get Pratitioner",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJqa3UiOiJodHRwczovL3ItaGkyLmNpZ25hLmNvbS9tZ2Evc3BzL29hdXRoL29hdXRoMjAvandrcy9oaTJfY2xpZW50X2RlZiIsImtpZCI6Im16MUUtUFpuM1E1X2JxTmpGdC1GUklFeXRwM1IxeVpSMG5fVjQ0czRmZDgiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzExODEyNTQsInN1YiI6IkEwMDAwMDAwMDAwMDAwMSIsImF1ZCI6ImhpMl9jbGllbnQiLCJleHAiOjE2NzExODMwNTQsImlzcyI6InItaGkyLmNpZ25hLmNvbSIsImh0dHBzOi8vaGkyLmNpZ25hLmNvbSI6eyJlbnRlcnByaXNlSWQiOiJBMDAwMDAwMDAwMDAwMDEiLCJhdXRob3JpemVyRW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwicm9sZSI6IlNFTEYifSwiY2lnbmEuZW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwiY2lnbmEuYXV0aG9yaXplckVudGVycHJpc2VJZCI6IkEwMDAwMDAwMDAwMDAwMSIsImNpZ25hLnJvbGUiOiJTRUxGIiwiZW50LnZlciI6MSwiZW50LmFwcE5hbWUiOiJDaWduYSBISTIiLCJlbnQudG9rZW5UeXBlIjoidXNlciIsImVudC5lbnYiOiJyZWwiLCJzY29wZSI6InBhdGllbnQvKi5yZWFkIG9wZW5pZCBmaGlyVXNlciIsImNsaWVudCI6ImQzNGMxMDkwLWU1NjgtNDJkNy1hZDMxLWJiYTFkMzk5ZGMzMiJ9.CasrFAes1syAbyik-GXsh6oze1C4PDN-SregQOcuohk7kNMpMrFsPZEvdc19eXo8mU7P-g0jqeKrr_xTWBJjHumEa1unjtxxjz2vJEBW0BTRIsSuvKPgKaF0tImX8UG6zx0cv6N7VwwEcfYTiYImy6u8ckpzM7TJ_XpDbe3tltbNv_-eiFVIuty8efhEWDKgN3Cll5vMo1ZfV2hxckFcEzSOWGsimz5SI_-To54gACM6K09gAI09SlHZgGsvR8ntXIa9ILa4nXNfCLVElRHfuTUHKhysPrhBraiJsI0yFRBYNuNSdE9bfVw6ny6RdqQEB9H1fcmp2I5gXkbadRZ-bw",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/Practitioner/ifp-0817ffef-5f45-4675-90c2-d12794c11921",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"Practitioner",
+										"ifp-0817ffef-5f45-4675-90c2-d12794c11921"
+									]
+								}
 							},
 							"response": []
 						}
@@ -107,7 +135,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "eyJqa3UiOiJodHRwczovL3ItaGkyLmNpZ25hLmNvbS9tZ2Evc3BzL29hdXRoL29hdXRoMjAvandrcy9oaTJfY2xpZW50X2RlZiIsImtpZCI6Im16MUUtUFpuM1E1X2JxTmpGdC1GUklFeXRwM1IxeVpSMG5fVjQ0czRmZDgiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzA4MzczODUsInN1YiI6IkEwMDAwMDAwMDAwMDAwMSIsImF1ZCI6ImhpMl9jbGllbnQiLCJleHAiOjE2NzA4MzkxODUsImlzcyI6InItaGkyLmNpZ25hLmNvbSIsImh0dHBzOi8vaGkyLmNpZ25hLmNvbSI6eyJlbnRlcnByaXNlSWQiOiJBMDAwMDAwMDAwMDAwMDEiLCJhdXRob3JpemVyRW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwicm9sZSI6IlNFTEYifSwiY2lnbmEuZW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwiY2lnbmEuYXV0aG9yaXplckVudGVycHJpc2VJZCI6IkEwMDAwMDAwMDAwMDAwMSIsImNpZ25hLnJvbGUiOiJTRUxGIiwiZW50LnZlciI6MSwiZW50LmFwcE5hbWUiOiJDaWduYSBISTIiLCJlbnQudG9rZW5UeXBlIjoidXNlciIsImVudC5lbnYiOiJyZWwiLCJzY29wZSI6InBhdGllbnQvKi5yZWFkIG9wZW5pZCBmaGlyVXNlciIsImNsaWVudCI6ImQzNGMxMDkwLWU1NjgtNDJkNy1hZDMxLWJiYTFkMzk5ZGMzMiJ9.psh2L1x9WEkEWaKTPJZpCDViPoWqm0NgXHvCx7RWavZJ-16cPpkrvuw5QuojCnHsirFwwqNdJ652hLQ9KjbA9z9YvrzqhPx231hx9UZCOGwJK1Ty_YaVuP-Mdvf0GARzlOYIid7JwU_nIkJr806UaUpASMmf6MEI3ODWjx6KxpLnDh2Us7APjDtB1TwR5RYNyBUi5cV6JVTIVZCrJWIus0gbukRirIj7jElRKwZkpi78xtZjj34igtpjV3bHXmrpbtpKKPBWU4Scp7uSC_nqehW3pazXQZwfaoINDtbKmthfhjmUhYuq0YI66EL_s3C2_eNhVJDWKHJqFiU9tg_fIg",
+											"value": "{{token}}",
 											"type": "string"
 										}
 									]
@@ -115,7 +143,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{cigna_fhir_api\n}}/ExplanationOfBenefit?_id=ifp-05ba16485f6baeb45115f2a379983a41&_include=ExplanationOfBenefit:",
+									"raw": "{{cigna_fhir_api\n}}/ExplanationOfBenefit?_id=ifp-05ba16485f6baeb45115f2a379983a41&_include=ExplanationOfBenefit:*",
 									"host": [
 										"{{cigna_fhir_api\n}}"
 									],
@@ -129,7 +157,7 @@
 										},
 										{
 											"key": "_include",
-											"value": "ExplanationOfBenefit:"
+											"value": "ExplanationOfBenefit:*"
 										}
 									]
 								}
@@ -144,7 +172,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "eyJqa3UiOiJodHRwczovL3ItaGkyLmNpZ25hLmNvbS9tZ2Evc3BzL29hdXRoL29hdXRoMjAvandrcy9oaTJfY2xpZW50X2RlZiIsImtpZCI6Im16MUUtUFpuM1E1X2JxTmpGdC1GUklFeXRwM1IxeVpSMG5fVjQ0czRmZDgiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzA4MzA0MTAsInN1YiI6IkEwMDAwMDAwMDAwMDAwMSIsImF1ZCI6ImhpMl9jbGllbnQiLCJleHAiOjE2NzA4MzIyMTAsImlzcyI6InItaGkyLmNpZ25hLmNvbSIsImh0dHBzOi8vaGkyLmNpZ25hLmNvbSI6eyJlbnRlcnByaXNlSWQiOiJBMDAwMDAwMDAwMDAwMDEiLCJhdXRob3JpemVyRW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwicm9sZSI6IlNFTEYifSwiY2lnbmEuZW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwiY2lnbmEuYXV0aG9yaXplckVudGVycHJpc2VJZCI6IkEwMDAwMDAwMDAwMDAwMSIsImNpZ25hLnJvbGUiOiJTRUxGIiwiZW50LnZlciI6MSwiZW50LmFwcE5hbWUiOiJDaWduYSBISTIiLCJlbnQudG9rZW5UeXBlIjoidXNlciIsImVudC5lbnYiOiJyZWwiLCJzY29wZSI6InBhdGllbnQvKi5yZWFkIG9wZW5pZCBmaGlyVXNlciIsImNsaWVudCI6ImQzNGMxMDkwLWU1NjgtNDJkNy1hZDMxLWJiYTFkMzk5ZGMzMiJ9.k0_Pl4VjIESoWgPdTwZuD14xOHGcxlB4ymE2sv9afWSmQH4xye26pYAjcN1sWQiDmiY4P-6FtlcgZ6h--Gcm04WJPXa7cGUeeFeWAXaKU7N8cY6_nNbzyJ_Hl_bwlFlg6X1e4RVkkIS0FC-jAMgocOTuJiKq9L9xL2NlMYxTAQ60T8DgfjJPUv7gY4HwOrX5TFC1kqQcK4OH6qFzT6_uQqP6ZuduEfc_hhC8hYqOP-EePs-R9gJzXWrgEHzqj2oqSmKU6I3cjUM8POmbDdGVQEFURqvR_DgTiemmj7jbc-xBHSmCU7_2_xAsiPhcorpIFHLOcml1HCyAioA8z0Vk9w",
+											"value": "{{token}}",
 											"type": "string"
 										}
 									]
@@ -152,7 +180,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{cigna_fhir_api\n}}/ExplanationOfBenefit?patient=gov-8972693f-069b-4714-82f9-f805ebf7800f",
+									"raw": "{{cigna_fhir_api\n}}/ExplanationOfBenefit?patient=gov-05ba16485f6baeb45115f2a379983a41",
 									"host": [
 										"{{cigna_fhir_api\n}}"
 									],
@@ -162,7 +190,7 @@
 									"query": [
 										{
 											"key": "patient",
-											"value": "gov-8972693f-069b-4714-82f9-f805ebf7800f"
+											"value": "gov-05ba16485f6baeb45115f2a379983a41"
 										}
 									]
 								}
@@ -177,8 +205,28 @@
 						{
 							"name": "Get Organization",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJqa3UiOiJodHRwczovL3ItaGkyLmNpZ25hLmNvbS9tZ2Evc3BzL29hdXRoL29hdXRoMjAvandrcy9oaTJfY2xpZW50X2RlZiIsImtpZCI6Im16MUUtUFpuM1E1X2JxTmpGdC1GUklFeXRwM1IxeVpSMG5fVjQ0czRmZDgiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzExODEyNTQsInN1YiI6IkEwMDAwMDAwMDAwMDAwMSIsImF1ZCI6ImhpMl9jbGllbnQiLCJleHAiOjE2NzExODMwNTQsImlzcyI6InItaGkyLmNpZ25hLmNvbSIsImh0dHBzOi8vaGkyLmNpZ25hLmNvbSI6eyJlbnRlcnByaXNlSWQiOiJBMDAwMDAwMDAwMDAwMDEiLCJhdXRob3JpemVyRW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwicm9sZSI6IlNFTEYifSwiY2lnbmEuZW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwiY2lnbmEuYXV0aG9yaXplckVudGVycHJpc2VJZCI6IkEwMDAwMDAwMDAwMDAwMSIsImNpZ25hLnJvbGUiOiJTRUxGIiwiZW50LnZlciI6MSwiZW50LmFwcE5hbWUiOiJDaWduYSBISTIiLCJlbnQudG9rZW5UeXBlIjoidXNlciIsImVudC5lbnYiOiJyZWwiLCJzY29wZSI6InBhdGllbnQvKi5yZWFkIG9wZW5pZCBmaGlyVXNlciIsImNsaWVudCI6ImQzNGMxMDkwLWU1NjgtNDJkNy1hZDMxLWJiYTFkMzk5ZGMzMiJ9.CasrFAes1syAbyik-GXsh6oze1C4PDN-SregQOcuohk7kNMpMrFsPZEvdc19eXo8mU7P-g0jqeKrr_xTWBJjHumEa1unjtxxjz2vJEBW0BTRIsSuvKPgKaF0tImX8UG6zx0cv6N7VwwEcfYTiYImy6u8ckpzM7TJ_XpDbe3tltbNv_-eiFVIuty8efhEWDKgN3Cll5vMo1ZfV2hxckFcEzSOWGsimz5SI_-To54gACM6K09gAI09SlHZgGsvR8ntXIa9ILa4nXNfCLVElRHfuTUHKhysPrhBraiJsI0yFRBYNuNSdE9bfVw6ny6RdqQEB9H1fcmp2I5gXkbadRZ-bw",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/Organization/ifp-9dd4e461268c8034f5c8564e155c67a6",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"Organization",
+										"ifp-9dd4e461268c8034f5c8564e155c67a6"
+									]
+								}
 							},
 							"response": []
 						}
@@ -195,16 +243,66 @@
 						{
 							"name": "Get MedicationRequest by Patient",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/MedicationRequest?patient=*",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"MedicationRequest"
+									],
+									"query": [
+										{
+											"key": "patient",
+											"value": "*"
+										}
+									]
+								}
 							},
 							"response": []
 						},
 						{
 							"name": "Get Medication Request",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/MedicationRequest?_lastUpdated=gt2013-01-14T10:00",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"MedicationRequest"
+									],
+									"query": [
+										{
+											"key": "_lastUpdated",
+											"value": "gt2013-01-14T10:00"
+										}
+									]
+								}
 							},
 							"response": []
 						}
@@ -216,8 +314,28 @@
 						{
 							"name": "Get Practitioner",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/Practitioner/ifp-0817ffef-5f45-4675-90c2-d12794c11921",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"Practitioner",
+										"ifp-0817ffef-5f45-4675-90c2-d12794c11921"
+									]
+								}
 							},
 							"response": []
 						}
@@ -229,8 +347,33 @@
 						{
 							"name": "get Document Request",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/DocumentReference?patient=ifp-8972693f-069b-4714-82f9-f805ebf7800f",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"DocumentReference"
+									],
+									"query": [
+										{
+											"key": "patient",
+											"value": "ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+										}
+									]
+								}
 							},
 							"response": []
 						}
@@ -242,16 +385,66 @@
 						{
 							"name": "get AllergyIntolerance",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/AllergyIntolerance?patient=ifp-8972693f-069b-4714-82f9-f805ebf7800f",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"AllergyIntolerance"
+									],
+									"query": [
+										{
+											"key": "patient",
+											"value": "ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+										}
+									]
+								}
 							},
 							"response": []
 						},
 						{
 							"name": "get AllergyIntolerance by ld",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/AllergyIntolerance?_lastUpdated=gt2013-01-14T10:00",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"AllergyIntolerance"
+									],
+									"query": [
+										{
+											"key": "_lastUpdated",
+											"value": "gt2013-01-14T10:00"
+										}
+									]
+								}
 							},
 							"response": []
 						}
@@ -263,8 +456,114 @@
 						{
 							"name": "get coverage",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/Coverage?patient=ifp-8972693f-069b-4714-82f9-f805ebf7800f",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"Coverage"
+									],
+									"query": [
+										{
+											"key": "patient",
+											"value": "ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Goal",
+					"item": [
+						{
+							"name": "get goal",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/Goal?patient=ifp-8972693f-069b-4714-82f9-f805ebf7800f",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"Goal"
+									],
+									"query": [
+										{
+											"key": "patient",
+											"value": "ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Da Vinci PDEX US Drug Formulary",
+			"item": [
+				{
+					"name": "List/Coverage Plan",
+					"item": [
+						{
+							"name": "get list",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/List?_lastUpdated=gt2013-01-14T10:00",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"List"
+									],
+									"query": [
+										{
+											"key": "_lastUpdated",
+											"value": "gt2013-01-14T10:00"
+										}
+									]
+								}
 							},
 							"response": []
 						}
