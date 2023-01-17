@@ -1,0 +1,119 @@
+Aetna
+App Name :patientaccess-api
+Client ID : af9589ad-17b1-405e-a9ca-0a8a233f7dcb
+Secret : aF8dD1aQ7pO7xW7aF6yW2vY6dB3kA0rB4kA6aV0tQ4vV5kQ1dC
+
+
+Carin BB:
+Available:
+1. ExplanationOfBenefit -2 
+	ifp-05ba16485f6baeb45115f2a379983a41
+	gov-05ba16485f6baeb45115f2a379983a41
+2. Patient: -4 
+	ifp-8972693f-069b-4714-82f9-f805ebf7800f
+	gov-8972693f-069b-4714-82f9-f805ebf7800f
+	evi-Z00000000000001
+	A00000000000001
+3 Coverage: -2 
+	ifp-a1d9a16c4138020f3f1bcd2e08a87738
+	gov-a1d9a16c4138020f3f1bcd2e08a87738
+4.Organization: -2 
+	ifp-9dd4e461268c8034f5c8564e155c67a6
+	gov-9dd4e461268c8034f5c8564e155c67a6
+
+Not Available (Required):
+Pratitioner
+
+US Core:
+Available:
+1. DocumentReference -1
+	evi-doc-ref-Z00000000000001
+2. Immunization -2
+	ifp-7k50987f-3331-4jnf-bf6d-b9j1a5fcbb11
+	gov-7k50987f-3331-4jnf-bf6d-b9j1a5fcbb11
+3. AllergyIntolerance -2
+	ifp-c3df91cb439bb6c7cfa2408b13d6129f
+	gov-c3df91cb439bb6c7cfa2408b13d6129f
+4. Condition -4
+	ifp-a8673900c544d26d7e44ff571591e719
+	ifp-17d6796eaedf9fdfa27cbffd6bb57064
+	gov-a8673900c544d26d7e44ff571591e719
+	gov-17d6796eaedf9fdfa27cbffd6bb57064
+5. Encounter:
+	ifp-14f2b9e416caadcfe0a5df912c4969fe
+	ifp-2bf4380ab1d2031793c3602e295195b2
+	gov-14f2b9e416caadcfe0a5df912c4969fe
+	gov-2bf4380ab1d2031793c3602e295195b2
+6. Observation:
+	ifp-a101e323f7a870d1ea7c7d1bb29fda75
+	gov-a101e323f7a870d1ea7c7d1bb29fda75
+7. Location:
+	ifp-2f26caab-536c-4e00-8672-72a6b283fa90
+	gov-2f26caab-536c-4e00-8672-72a6b283fa90
+	
+Not Available:
+
+
+Alternate Mapping:
+
+Hospitalization:
+	Facility: Encounter.serviceProvider.reference(Organization)  
+				Organization.
+				(Or)
+			Encounter.location.reference(Location)
+	admit: Encounter.period.start
+	discharge: Encounter.period.end
+	code: Encounter.diagnosis.condition.reference(Condition)
+			-> Condition.code.coding.code
+	Diagnosis: Encounter.diagnosis.condition.reference(Condition)
+			-> Condition.code.coding.display
+			
+*issues: the references available in references are not valid
+
+Surgeries:
+	Procedure:	
+	date:
+	provider:
+	contact information:
+
+* Issues 1. Resources: Procedure and Prationer resources are not available
+		 2. The link b/w hospitalization and Surgeries are not clear 
+
+Providers:
+	Provider:
+	Speciality:
+	Last Treatment/Visit: 
+	Contact Information:
+
+*Issues: Prationer and PratitionerRole are not available
+Pharmacy Information:
+	Medication:
+	Category:
+	Dosage:
+	Last Filled Date:
+	New Prescription
+
+* Issues : 1. Resources: MedicationKnowledge, List , MedicationRequest 
+
+Case Management:
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+Concerns:
+
+1. Patient $everthing operation : It is not working as Expected 
+2. Pratitioner resource is not available
+3. ExplanationOfBenefit QueryParams : _include not working as expected .... coverage not included in API call 
+4. Diagnosis/SuportingInfo for servicefacility data is not present in dummy data from EOB
+5. Binary Reference in DocumentReference is not available
+ 
+
