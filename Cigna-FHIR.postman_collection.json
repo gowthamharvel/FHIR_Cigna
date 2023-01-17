@@ -88,6 +88,57 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Patient By Identifier",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Patient By name",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Patient Everything",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/Patient/evi-Z00000000000001/$everything?_type=Encounter",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"Patient",
+										"evi-Z00000000000001",
+										"$everything"
+									],
+									"query": [
+										{
+											"key": "_type",
+											"value": "Encounter"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},
@@ -196,6 +247,39 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Get EOB for patient for profile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/ExplanationOfBenefit?patient=gov-05ba16485f6baeb45115f2a379983a41",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"ExplanationOfBenefit"
+									],
+									"query": [
+										{
+											"key": "patient",
+											"value": "gov-05ba16485f6baeb45115f2a379983a41"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},
@@ -227,6 +311,19 @@
 										"ifp-9dd4e461268c8034f5c8564e155c67a6"
 									]
 								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Coverage",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": []
 							},
 							"response": []
 						}
@@ -525,6 +622,116 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "DiagnosisReport",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/DiagnosticReport?_lastUpdated=gt2013-01-14T10:00",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"DiagnosticReport"
+									],
+									"query": [
+										{
+											"key": "_lastUpdated",
+											"value": "gt2013-01-14T10:00"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Condition",
+					"item": [
+						{
+							"name": "Get Condition on ID",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Condition By Patient",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Encounter",
+					"item": [
+						{
+							"name": "Get Encounter By Patient",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Get Enconter By ID",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Organization",
+					"item": []
+				},
+				{
+					"name": "Location",
+					"item": [
+						{
+							"name": "Get Location By ID",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Observation",
+					"item": [
+						{
+							"name": "Get Observation By ID",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		},
@@ -638,6 +845,12 @@
 				"header": []
 			},
 			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "cigna_fhir_api",
+			"value": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal"
 		}
 	]
 }
