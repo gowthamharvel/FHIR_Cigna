@@ -35,22 +35,6 @@
 			]
 		},
 		{
-			"name": "MedicationKnowledge",
-			"item": [
-				{
-					"name": "Get Medication Knowledge",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": ""
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
 			"name": "CARIN BB- Clinical and encounter data",
 			"item": [
 				{
@@ -90,7 +74,7 @@
 							"response": []
 						},
 						{
-							"name": "Patient By Identifier",
+							"name": "Patient By Id",
 							"request": {
 								"method": "GET",
 								"header": []
@@ -667,16 +651,61 @@
 						{
 							"name": "Get Condition on ID",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/Condition/ifp-a8673900c544d26d7e44ff571591e719",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"Condition",
+										"ifp-a8673900c544d26d7e44ff571591e719"
+									]
+								}
 							},
 							"response": []
 						},
 						{
 							"name": "Get Condition By Patient",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/Condition?patient=ifp-8972693f-069b-4714-82f9-f805ebf7800f",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"Condition"
+									],
+									"query": [
+										{
+											"key": "patient",
+											"value": "ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+										}
+									]
+								}
 							},
 							"response": []
 						}
@@ -688,16 +717,61 @@
 						{
 							"name": "Get Encounter By Patient",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/Encounter?patient=ifp-8972693f-069b-4714-82f9-f805ebf7800f",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"Encounter"
+									],
+									"query": [
+										{
+											"key": "patient",
+											"value": "ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+										}
+									]
+								}
 							},
 							"response": []
 						},
 						{
 							"name": "Get Enconter By ID",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/Encounter/gov-2bf4380ab1d2031793c3602e295195b2",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"Encounter",
+										"gov-2bf4380ab1d2031793c3602e295195b2"
+									]
+								}
 							},
 							"response": []
 						}
@@ -713,8 +787,28 @@
 						{
 							"name": "Get Location By ID",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/Location/ifp-2f26caab-536c-4e00-8672-72a6b283fa90",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"Location",
+										"ifp-2f26caab-536c-4e00-8672-72a6b283fa90"
+									]
+								}
 							},
 							"response": []
 						}
@@ -726,8 +820,28 @@
 						{
 							"name": "Get Observation By ID",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/Observation/ifp-a101e323f7a870d1ea7c7d1bb29fda75",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"Observation",
+										"ifp-a101e323f7a870d1ea7c7d1bb29fda75"
+									]
+								}
 							},
 							"response": []
 						}
@@ -769,6 +883,28 @@
 											"key": "_lastUpdated",
 											"value": "gt2013-01-14T10:00"
 										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "MedicationKnowledge",
+					"item": [
+						{
+							"name": "Get Medication Knowledge",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{cigna_fhir_api\n}}/MedicationKnowledge",
+									"host": [
+										"{{cigna_fhir_api\n}}"
+									],
+									"path": [
+										"MedicationKnowledge"
 									]
 								}
 							},
