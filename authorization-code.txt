@@ -1,0 +1,10 @@
+https://secapi.bcbstx.com/fhir/r4/metadata
+
+67d64d96-56dc-48d1-a009-49ddc0d02532
+
+id:     d34c1090-e568-42d7-ad31-bba1d399dc32
+secret: d38fa3d0-7f23-48bf-a91b-2f51b6fa7851
+
+https://r-hi2.cigna.com/hi2-auth-ui/user-consent?scopes=patient/*.read%20openid%20fhirUser&nonce=gowtham&state=123456&client_id=b4e4ba96-09c3-417b-99d2-6ca6a83bd58b
+
+https://r-hi2.cigna.com/mga/sps/oauth/oauth20/authorize?nonce=123456&response_type=code&state=123456&client_id=d34c1090-e568-42d7-ad31-bba1d399dc32&scope=openid fhirUser patient/*.read&redirect_uri=https://example.com
