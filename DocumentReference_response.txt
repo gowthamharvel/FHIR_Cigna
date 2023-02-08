@@ -1,0 +1,63 @@
+{
+    "resourceType": "DocumentReference",
+    "id": "evi-doc-ref-Z00000000000001",
+    "meta": {
+        "versionId": "1",
+        "lastUpdated": "2022-09-14T17:19:57.435+00:00",
+        "source": "EVI#LM5TYOL9bEzNyzuF"
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:oid:2.16.840.1.113883.19.5.99999.1-Z00000000000001}</p></div>"
+    },
+    "status": "current",
+    "type": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "34133-9",
+                "display": "Summary of episode note"
+            }
+        ],
+        "text": "CCD Document"
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                    "code": "clinical-note",
+                    "display": "Clinical Note"
+                }
+            ],
+            "text": "Clinical Note"
+        }
+    ],
+    "subject": {
+        "reference": "Patient/evi-Z00000000000001",
+        "display": "Test Patient DocumentReference Z00000000000001"
+    },
+    "date": "2021-10-16T16:48:55.237-06:00",
+    "author": [
+        {
+            "reference": "Practitioner/evi-practitioner-test-Z00000000000001",
+            "display": "Test Doctor, MD"
+        }
+    ],
+    "description": "Typical visit",
+    "content": [
+        {
+            "attachment": {
+                "contentType": "text/plain",
+                "url": "http://example.test/Binary/Z00000000000001-note",
+                "title": "Uri where the data can be found: [base]/Binary/Z00000000000001-note"
+            }
+        }
+    ],
+    "context": {
+        "period": {
+            "start": "2021-10-16",
+            "end": "2021-10-17"
+        }
+    }
+}
