@@ -1,0 +1,2153 @@
+{
+    "meta": {
+        "source": "https://p-hi2.digitaledge.cigna.com"
+    },
+    "entry": [
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Patient/ifp-8972693f-069b-4714-82f9-f805ebf7800f",
+            "resource": {
+                "id": "ifp-8972693f-069b-4714-82f9-f805ebf7800f",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:32:49.128000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient"
+                    ],
+                    "source": "GOV#zzBK3GFcjDMGqgnI",
+                    "versionId": "1"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Maria Eugenia <b>VILLA </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>8972693f-069b-4714-82f9-f805ebf7800f</td></tr><tr><td>Address</td><td><span>147 01 HILLSIDE AVE </span><br/><span>Tuscaloosa </span><span>AL </span></td></tr><tr><td>Date of birth</td><td><span>16 March 1945</span></td></tr></tbody></table></div>",
+                    "status": "generated"
+                },
+                "address": [
+                    {
+                        "city": "Tuscaloosa",
+                        "district": "Tuscaloosa",
+                        "line": [
+                            "147 01 HILLSIDE AVE"
+                        ],
+                        "postalCode": "35401",
+                        "state": "AL",
+                        "text": "147 01 HILLSIDE AVE,Tuscaloosa,AL,35401",
+                        "type": "both"
+                    }
+                ],
+                "birthDate": "1945-03-16",
+                "communication": [
+                    {
+                        "language": {
+                            "coding": [
+                                {
+                                    "code": "en",
+                                    "display": "English",
+                                    "system": "https://tools.ietf.org/html/bcp47"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "gender": "female",
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MB",
+                                    "display": "Member Number",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "value": "8972693f-069b-4714-82f9-f805ebf7800f"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Villa",
+                        "given": [
+                            "Maria Eugenia"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "home",
+                        "value": "2052398935"
+                    }
+                ],
+                "resourceType": "Patient"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Immunization/ifp-7k50987f-3331-4jnf-bf6d-b9j1a5fcbb11",
+            "resource": {
+                "id": "ifp-7k50987f-3331-4jnf-bf6d-b9j1a5fcbb11",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:32:54.690000+00:00",
+                    "source": "GOV#WXgH3ZGjKn8vaguE",
+                    "versionId": "1"
+                },
+                "location": {
+                    "reference": "Location/ifp-2f26caab-536c-4e00-8672-72a6b283fa90"
+                },
+                "occurrenceDateTime": "2021-01-22T15:20:12+00:00",
+                "patient": {
+                    "reference": "Patient/ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "primarySource": true,
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "code": "208",
+                            "system": "http://hl7.org/fhir/sid/cvx"
+                        }
+                    ]
+                },
+                "resourceType": "Immunization"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/AllergyIntolerance/ifp-c3df91cb439bb6c7cfa2408b13d6129f",
+            "resource": {
+                "id": "ifp-c3df91cb439bb6c7cfa2408b13d6129f",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:00.856000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"
+                    ],
+                    "source": "GOV#CP2wlBhbqxCzpuGI",
+                    "versionId": "1"
+                },
+                "category": [
+                    "medication"
+                ],
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "code": "active",
+                            "display": "active",
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+                        }
+                    ],
+                    "text": "active"
+                },
+                "code": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "unknown"
+                        }
+                    ]
+                },
+                "onsetDateTime": "2019-10-04T00:00:00+00:00",
+                "patient": {
+                    "reference": "Patient/ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "reaction": [
+                    {
+                        "manifestation": [
+                            {
+                                "text": "hyperkalemia when taking bactrim"
+                            }
+                        ]
+                    }
+                ],
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "code": "confirmed",
+                            "display": "confirmed",
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+                        }
+                    ]
+                },
+                "resourceType": "AllergyIntolerance"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Condition/ifp-a8673900c544d26d7e44ff571591e719",
+            "resource": {
+                "id": "ifp-a8673900c544d26d7e44ff571591e719",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:01.886000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/StructureDefinition/Condition",
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "source": "GOV#aFOFfLRl4LNdpF5r",
+                    "versionId": "1"
+                },
+                "category": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                "valueCode": "unknown"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "J30.9",
+                            "display": "Allergic rhinitis, unspecified",
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "version": "10"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "8_780751916*01_16_PR5638311_J30.9_1"
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "resourceType": "Condition"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Condition/ifp-17d6796eaedf9fdfa27cbffd6bb57064",
+            "resource": {
+                "id": "ifp-17d6796eaedf9fdfa27cbffd6bb57064",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:02.917000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/StructureDefinition/Condition",
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "source": "GOV#4Lx2WfX69QVVHeJ3",
+                    "versionId": "1"
+                },
+                "category": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                "valueCode": "unknown"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "723.1",
+                            "display": "Cervicalgia",
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "version": "9"
+                        },
+                        {
+                            "code": "724.5",
+                            "display": "Backache NOS",
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "version": "9"
+                        },
+                        {
+                            "code": "611.1",
+                            "display": "Hypertrophy of breast",
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "version": "9"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "8_775031516*03_1_445460_724.5_2"
+                    },
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "8_775031516*03_1_445460_723.1_3"
+                    },
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "8_775031516*03_1_445460_611.1_1"
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "resourceType": "Condition"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Encounter/ifp-14f2b9e416caadcfe0a5df912c4969fe",
+            "resource": {
+                "id": "ifp-14f2b9e416caadcfe0a5df912c4969fe",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:10.138000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter",
+                        "http://hl7.org/fhir/StructureDefinition/Encounter"
+                    ],
+                    "source": "GOV#2d1lGa1684QHjY32",
+                    "versionId": "1"
+                },
+                "class": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "unknown"
+                        }
+                    ]
+                },
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/ifp-V798771_8_774706838*01_12"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "8_V798771_774706838*01_12"
+                    }
+                ],
+                "location": [
+                    {
+                        "location": {
+                            "reference": "Location/ifp-E80187"
+                        }
+                    }
+                ],
+                "participant": [
+                    {
+                        "period": {
+                            "end": "2015-01-05",
+                            "start": "2014-07-09"
+                        },
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "E80187",
+                                        "system": "http://terminology.hl7.org/CodeSystem/participant-type"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "period": {
+                    "end": "2015-01-05",
+                    "start": "2014-07-09"
+                },
+                "serviceProvider": {
+                    "reference": "Organization/ifp-E80187"
+                },
+                "status": "finished",
+                "subject": {
+                    "reference": "Patient/ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "type": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                "valueCode": "unknown"
+                            }
+                        ]
+                    }
+                ],
+                "resourceType": "Encounter"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Encounter/ifp-2bf4380ab1d2031793c3602e295195b2",
+            "resource": {
+                "id": "ifp-2bf4380ab1d2031793c3602e295195b2",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:11.170000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter",
+                        "http://hl7.org/fhir/StructureDefinition/Encounter"
+                    ],
+                    "source": "GOV#yeI4NDe3PxIYLfy8",
+                    "versionId": "1"
+                },
+                "class": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "unknown"
+                        }
+                    ]
+                },
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/ifp-V798693_8_774071683*01_12"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "8_V798693_774071683*01_12"
+                    }
+                ],
+                "location": [
+                    {
+                        "location": {
+                            "reference": "Location/ifp-G49856"
+                        }
+                    }
+                ],
+                "participant": [
+                    {
+                        "period": {
+                            "end": "2015-01-04",
+                            "start": "2014-07-08"
+                        },
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "G49856",
+                                        "system": "http://terminology.hl7.org/CodeSystem/participant-type"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "period": {
+                    "end": "2015-01-04",
+                    "start": "2014-07-08"
+                },
+                "serviceProvider": {
+                    "reference": "Organization/ifp-G49856"
+                },
+                "status": "finished",
+                "subject": {
+                    "reference": "Patient/ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "type": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                "valueCode": "unknown"
+                            }
+                        ]
+                    }
+                ],
+                "resourceType": "Encounter"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Coverage/ifp-a1d9a16c4138020f3f1bcd2e08a87738",
+            "resource": {
+                "id": "ifp-a1d9a16c4138020f3f1bcd2e08a87738",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:21.986000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"
+                    ],
+                    "source": "GOV#eRLshw35szqSbD28",
+                    "versionId": "1"
+                },
+                "beneficiary": {
+                    "reference": "Patient/ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "class": [
+                    {
+                        "name": "not-applicable",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "group",
+                                    "display": "Group",
+                                    "system": "http://terminology.hl7.org/CodeSystem/coverage-class"
+                                }
+                            ]
+                        },
+                        "value": "not-applicable"
+                    },
+                    {
+                        "name": "Cigna-HealthSpring TotalCare (HMO SNP)",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "plan",
+                                    "display": "Plan",
+                                    "system": "http://terminology.hl7.org/CodeSystem/coverage-class"
+                                }
+                            ]
+                        },
+                        "value": "H3949-009"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "50_QMXM00007289691_50_UQBP000739_STANDARD_20190101_H3949_009_000_20140101_2019-01-01_2019-01-01_STANDARD"
+                    }
+                ],
+                "payor": [
+                    {
+                        "display": "Cigna",
+                        "reference": "Organization/ifp-9dd4e461268c8034f5c8564e155c67a6"
+                    }
+                ],
+                "period": {
+                    "end": "2078-12-31",
+                    "start": "2019-01-01"
+                },
+                "policyHolder": {
+                    "reference": "Patient/ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "relationship": {
+                    "coding": [
+                        {
+                            "code": "self",
+                            "display": "Self",
+                            "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship"
+                        }
+                    ]
+                },
+                "status": "active",
+                "subscriber": {
+                    "reference": "Patient/ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "subscriberId": "32095890",
+                "resourceType": "Coverage"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/ExplanationOfBenefit/ifp-05ba16485f6baeb45115f2a379983a41",
+            "resource": {
+                "id": "ifp-05ba16485f6baeb45115f2a379983a41",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:23.549000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-explanationofbenefit-pharmacy"
+                    ],
+                    "source": "GOV#dJlQ8EaNtLa3oHL1",
+                    "versionId": "1"
+                },
+                "billablePeriod": {
+                    "end": "2019-03-24",
+                    "start": "2019-03-24"
+                },
+                "created": "2019-03-23T01:00:00+00:00",
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "190828379328130"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unsupported"
+                                }
+                            ]
+                        },
+                        "_focal": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unsupported"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "insurer": {
+                    "reference": "Organization/ifp-9dd4e461268c8034f5c8564e155c67a6"
+                },
+                "item": [
+                    {
+                        "locationAddress": {
+                            "city": "Unknown",
+                            "country": "USA",
+                            "line": [
+                                "Unknown",
+                                "Unknown"
+                            ],
+                            "postalCode": "20706",
+                            "state": "Unknown",
+                            "text": "Unknown,Unknown,Unknown,Unknown,20706"
+                        },
+                        "net": {
+                            "currency": "USD",
+                            "value": 14.781
+                        },
+                        "productOrService": {
+                            "coding": [
+                                {
+                                    "code": "0060324393",
+                                    "display": "BENZTROPINE MESYLATE"
+                                }
+                            ]
+                        },
+                        "quantity": {
+                            "value": 30
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "servicedDate": "2019-03-24"
+                    }
+                ],
+                "outcome": "complete",
+                "patient": {
+                    "reference": "Patient/ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "payee": {
+                    "id": "1821438862",
+                    "party": {
+                        "reference": "Practitioner/ifp-0817ffef-5f45-4675-90c2-d12794c11921"
+                    },
+                    "type": {
+                        "coding": [
+                            {
+                                "code": "provider",
+                                "display": "Provider",
+                                "system": "http://terminology.hl7.org/CodeSystem/payeetype"
+                            }
+                        ]
+                    }
+                },
+                "provider": {
+                    "reference": "Organization/ifp-9dd4e461268c8034f5c8564e155c67a6"
+                },
+                "related": [
+                    {
+                        "id": "190828379328130",
+                        "relationship": {
+                            "coding": [
+                                {
+                                    "code": "replaced",
+                                    "display": "Replaced claim",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Related-Claim-Relationship.html"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "status": "active",
+                "supportingInfo": [
+                    {
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "brandgenericcode",
+                                    "display": "brandgenericcode",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "brandgenericcode",
+                                    "display": "brandgenericcode",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "valueString": "G"
+                    },
+                    {
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "rxorigincode",
+                                    "display": "rxorigincode",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "rxorigincode",
+                                    "display": "rxorigincode",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "valueString": "T"
+                    },
+                    {
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "refillnum",
+                                    "display": "refillnum",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "refillnum",
+                                    "display": "refillnum",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 3
+                        }
+                    },
+                    {
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "dawcode",
+                                    "display": "dawcode",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "dawcode",
+                                    "display": "dawcode",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "valueString": "0"
+                    },
+                    {
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "clmrecvddate",
+                                    "display": "clmrecvddate",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "clmrecvddate",
+                                    "display": "clmrecvddate",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "timingDate": "2019-03-23"
+                    },
+                    {
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "dayssupply",
+                                    "display": "dayssupply",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "dayssupply",
+                                    "display": "dayssupply",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 30
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "pharmacy",
+                            "display": "Pharmacy",
+                            "system": "http://hl7.org/fhir/us/carin/CodeSystem/carin-bb-claim-type"
+                        }
+                    ],
+                    "text": "Pharmacy"
+                },
+                "use": "claim",
+                "resourceType": "ExplanationOfBenefit"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Observation/ifp-a101e323f7a870d1ea7c7d1bb29fda75",
+            "resource": {
+                "id": "ifp-a101e323f7a870d1ea7c7d1bb29fda75",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:31.315000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry"
+                    ],
+                    "source": "GOV#2zJ5mF5liS1JDmd4",
+                    "versionId": "1"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2708-6",
+                            "display": "2708-6",
+                            "system": "http://loinc.org"
+                        },
+                        {
+                            "code": "59408-5",
+                            "display": "59408-5",
+                            "system": "http://loinc.org"
+                        }
+                    ]
+                },
+                "effectiveDateTime": "2016-07-18",
+                "identifier": [
+                    {
+                        "value": "EQE_226010533114862_3335018_LAB_B6AE8D94BE02E002E2E2042E9FF8CE98"
+                    }
+                ],
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "unsupported"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "valueQuantity": {
+                    "code": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "%",
+                    "value": 93.6
+                },
+                "resourceType": "Observation"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Organization/ifp-9dd4e461268c8034f5c8564e155c67a6",
+            "resource": {
+                "id": "ifp-9dd4e461268c8034f5c8564e155c67a6",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:12.202000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-organization"
+                    ],
+                    "source": "GOV#EKlAJ8e60Rvy55By",
+                    "versionId": "1"
+                },
+                "active": false,
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-npi",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "NPI"
+                                }
+                            ]
+                        },
+                        "value": "x"
+                    }
+                ],
+                "name": "SUSAN BLAKENEY",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "6012962915"
+                    },
+                    {
+                        "system": "fax",
+                        "value": "6012962918"
+                    }
+                ],
+                "resourceType": "Organization"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Location/ifp-2f26caab-536c-4e00-8672-72a6b283fa90",
+            "resource": {
+                "id": "ifp-2f26caab-536c-4e00-8672-72a6b283fa90",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:32:54.175000+00:00",
+                    "source": "GOV#2WjZCVYmbo199Oui",
+                    "versionId": "1"
+                },
+                "address": {
+                    "city": "ALAHAMBRA",
+                    "country": "US",
+                    "line": [
+                        "551 WEST MAIN STREET"
+                    ],
+                    "postalCode": "91801",
+                    "state": "CA"
+                },
+                "name": "WALGREENS",
+                "resourceType": "Location"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f",
+            "resource": {
+                "id": "gov-8972693f-069b-4714-82f9-f805ebf7800f",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:32:49.128000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient"
+                    ],
+                    "source": "GOV#zzBK3GFcjDMGqgnI",
+                    "versionId": "1"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Maria Eugenia <b>VILLA </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>8972693f-069b-4714-82f9-f805ebf7800f</td></tr><tr><td>Address</td><td><span>147 01 HILLSIDE AVE </span><br/><span>Tuscaloosa </span><span>AL </span></td></tr><tr><td>Date of birth</td><td><span>16 March 1945</span></td></tr></tbody></table></div>",
+                    "status": "generated"
+                },
+                "address": [
+                    {
+                        "city": "Tuscaloosa",
+                        "district": "Tuscaloosa",
+                        "line": [
+                            "147 01 HILLSIDE AVE"
+                        ],
+                        "postalCode": "35401",
+                        "state": "AL",
+                        "text": "147 01 HILLSIDE AVE,Tuscaloosa,AL,35401",
+                        "type": "both"
+                    }
+                ],
+                "birthDate": "1945-03-16",
+                "communication": [
+                    {
+                        "language": {
+                            "coding": [
+                                {
+                                    "code": "en",
+                                    "display": "English",
+                                    "system": "https://tools.ietf.org/html/bcp47"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "gender": "female",
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MB",
+                                    "display": "Member Number",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "value": "8972693f-069b-4714-82f9-f805ebf7800f"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Villa",
+                        "given": [
+                            "Maria Eugenia"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "home",
+                        "value": "2052398935"
+                    }
+                ],
+                "resourceType": "Patient"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Immunization/gov-7k50987f-3331-4jnf-bf6d-b9j1a5fcbb11",
+            "resource": {
+                "id": "gov-7k50987f-3331-4jnf-bf6d-b9j1a5fcbb11",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:32:54.690000+00:00",
+                    "source": "GOV#WXgH3ZGjKn8vaguE",
+                    "versionId": "1"
+                },
+                "location": {
+                    "reference": "Location/gov-2f26caab-536c-4e00-8672-72a6b283fa90"
+                },
+                "occurrenceDateTime": "2021-01-22T15:20:12+00:00",
+                "patient": {
+                    "reference": "Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "primarySource": true,
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "code": "208",
+                            "system": "http://hl7.org/fhir/sid/cvx"
+                        }
+                    ]
+                },
+                "resourceType": "Immunization"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/AllergyIntolerance/gov-c3df91cb439bb6c7cfa2408b13d6129f",
+            "resource": {
+                "id": "gov-c3df91cb439bb6c7cfa2408b13d6129f",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:00.856000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"
+                    ],
+                    "source": "GOV#CP2wlBhbqxCzpuGI",
+                    "versionId": "1"
+                },
+                "category": [
+                    "medication"
+                ],
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "code": "active",
+                            "display": "active",
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+                        }
+                    ],
+                    "text": "active"
+                },
+                "code": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "unknown"
+                        }
+                    ]
+                },
+                "onsetDateTime": "2019-10-04T00:00:00+00:00",
+                "patient": {
+                    "reference": "Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "reaction": [
+                    {
+                        "manifestation": [
+                            {
+                                "text": "hyperkalemia when taking bactrim"
+                            }
+                        ]
+                    }
+                ],
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "code": "confirmed",
+                            "display": "confirmed",
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+                        }
+                    ]
+                },
+                "resourceType": "AllergyIntolerance"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Condition/gov-a8673900c544d26d7e44ff571591e719",
+            "resource": {
+                "id": "gov-a8673900c544d26d7e44ff571591e719",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:01.886000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/StructureDefinition/Condition",
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "source": "GOV#aFOFfLRl4LNdpF5r",
+                    "versionId": "1"
+                },
+                "category": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                "valueCode": "unknown"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "J30.9",
+                            "display": "Allergic rhinitis, unspecified",
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "version": "10"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "8_780751916*01_16_PR5638311_J30.9_1"
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "resourceType": "Condition"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Condition/gov-17d6796eaedf9fdfa27cbffd6bb57064",
+            "resource": {
+                "id": "gov-17d6796eaedf9fdfa27cbffd6bb57064",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:02.917000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/StructureDefinition/Condition",
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+                    ],
+                    "source": "GOV#4Lx2WfX69QVVHeJ3",
+                    "versionId": "1"
+                },
+                "category": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                "valueCode": "unknown"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "723.1",
+                            "display": "Cervicalgia",
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "version": "9"
+                        },
+                        {
+                            "code": "724.5",
+                            "display": "Backache NOS",
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "version": "9"
+                        },
+                        {
+                            "code": "611.1",
+                            "display": "Hypertrophy of breast",
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "version": "9"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "8_775031516*03_1_445460_724.5_2"
+                    },
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "8_775031516*03_1_445460_723.1_3"
+                    },
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "8_775031516*03_1_445460_611.1_1"
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "resourceType": "Condition"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Encounter/gov-14f2b9e416caadcfe0a5df912c4969fe",
+            "resource": {
+                "id": "gov-14f2b9e416caadcfe0a5df912c4969fe",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:10.138000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter",
+                        "http://hl7.org/fhir/StructureDefinition/Encounter"
+                    ],
+                    "source": "GOV#2d1lGa1684QHjY32",
+                    "versionId": "1"
+                },
+                "class": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "unknown"
+                        }
+                    ]
+                },
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/gov-V798771_8_774706838*01_12"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "8_V798771_774706838*01_12"
+                    }
+                ],
+                "location": [
+                    {
+                        "location": {
+                            "reference": "Location/gov-E80187"
+                        }
+                    }
+                ],
+                "participant": [
+                    {
+                        "period": {
+                            "end": "2015-01-05",
+                            "start": "2014-07-09"
+                        },
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "E80187",
+                                        "system": "http://terminology.hl7.org/CodeSystem/participant-type"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "period": {
+                    "end": "2015-01-05",
+                    "start": "2014-07-09"
+                },
+                "serviceProvider": {
+                    "reference": "Organization/gov-E80187"
+                },
+                "status": "finished",
+                "subject": {
+                    "reference": "Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "type": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                "valueCode": "unknown"
+                            }
+                        ]
+                    }
+                ],
+                "resourceType": "Encounter"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Encounter/gov-2bf4380ab1d2031793c3602e295195b2",
+            "resource": {
+                "id": "gov-2bf4380ab1d2031793c3602e295195b2",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:11.170000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter",
+                        "http://hl7.org/fhir/StructureDefinition/Encounter"
+                    ],
+                    "source": "GOV#yeI4NDe3PxIYLfy8",
+                    "versionId": "1"
+                },
+                "class": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "unknown"
+                        }
+                    ]
+                },
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "Condition/gov-V798693_8_774071683*01_12"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "8_V798693_774071683*01_12"
+                    }
+                ],
+                "location": [
+                    {
+                        "location": {
+                            "reference": "Location/gov-G49856"
+                        }
+                    }
+                ],
+                "participant": [
+                    {
+                        "period": {
+                            "end": "2015-01-04",
+                            "start": "2014-07-08"
+                        },
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "G49856",
+                                        "system": "http://terminology.hl7.org/CodeSystem/participant-type"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "period": {
+                    "end": "2015-01-04",
+                    "start": "2014-07-08"
+                },
+                "serviceProvider": {
+                    "reference": "Organization/gov-G49856"
+                },
+                "status": "finished",
+                "subject": {
+                    "reference": "Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "type": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                "valueCode": "unknown"
+                            }
+                        ]
+                    }
+                ],
+                "resourceType": "Encounter"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Coverage/gov-a1d9a16c4138020f3f1bcd2e08a87738",
+            "resource": {
+                "id": "gov-a1d9a16c4138020f3f1bcd2e08a87738",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:21.986000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"
+                    ],
+                    "source": "GOV#eRLshw35szqSbD28",
+                    "versionId": "1"
+                },
+                "beneficiary": {
+                    "reference": "Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "class": [
+                    {
+                        "name": "not-applicable",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "group",
+                                    "display": "Group",
+                                    "system": "http://terminology.hl7.org/CodeSystem/coverage-class"
+                                }
+                            ]
+                        },
+                        "value": "not-applicable"
+                    },
+                    {
+                        "name": "Cigna-HealthSpring TotalCare (HMO SNP)",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "plan",
+                                    "display": "Plan",
+                                    "system": "http://terminology.hl7.org/CodeSystem/coverage-class"
+                                }
+                            ]
+                        },
+                        "value": "H3949-009"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "50_QMXM00007289691_50_UQBP000739_STANDARD_20190101_H3949_009_000_20140101_2019-01-01_2019-01-01_STANDARD"
+                    }
+                ],
+                "payor": [
+                    {
+                        "display": "Cigna",
+                        "reference": "Organization/gov-9dd4e461268c8034f5c8564e155c67a6"
+                    }
+                ],
+                "period": {
+                    "end": "2078-12-31",
+                    "start": "2019-01-01"
+                },
+                "policyHolder": {
+                    "reference": "Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "relationship": {
+                    "coding": [
+                        {
+                            "code": "self",
+                            "display": "Self",
+                            "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship"
+                        }
+                    ]
+                },
+                "status": "active",
+                "subscriber": {
+                    "reference": "Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "subscriberId": "32095890",
+                "resourceType": "Coverage"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/ExplanationOfBenefit/gov-05ba16485f6baeb45115f2a379983a41",
+            "resource": {
+                "id": "gov-05ba16485f6baeb45115f2a379983a41",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:23.549000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-explanationofbenefit-pharmacy"
+                    ],
+                    "source": "GOV#dJlQ8EaNtLa3oHL1",
+                    "versionId": "1"
+                },
+                "billablePeriod": {
+                    "end": "2019-03-24",
+                    "start": "2019-03-24"
+                },
+                "created": "2019-03-23T01:00:00+00:00",
+                "identifier": [
+                    {
+                        "system": "https://developer.cigna.com",
+                        "value": "190828379328130"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unsupported"
+                                }
+                            ]
+                        },
+                        "_focal": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unsupported"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "insurer": {
+                    "reference": "Organization/gov-9dd4e461268c8034f5c8564e155c67a6"
+                },
+                "item": [
+                    {
+                        "locationAddress": {
+                            "city": "Unknown",
+                            "country": "USA",
+                            "line": [
+                                "Unknown",
+                                "Unknown"
+                            ],
+                            "postalCode": "20706",
+                            "state": "Unknown",
+                            "text": "Unknown,Unknown,Unknown,Unknown,20706"
+                        },
+                        "net": {
+                            "currency": "USD",
+                            "value": 14.781
+                        },
+                        "productOrService": {
+                            "coding": [
+                                {
+                                    "code": "0060324393",
+                                    "display": "BENZTROPINE MESYLATE"
+                                }
+                            ]
+                        },
+                        "quantity": {
+                            "value": 30
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "servicedDate": "2019-03-24"
+                    }
+                ],
+                "outcome": "complete",
+                "patient": {
+                    "reference": "Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "payee": {
+                    "id": "1821438862",
+                    "party": {
+                        "reference": "Practitioner/gov-0817ffef-5f45-4675-90c2-d12794c11921"
+                    },
+                    "type": {
+                        "coding": [
+                            {
+                                "code": "provider",
+                                "display": "Provider",
+                                "system": "http://terminology.hl7.org/CodeSystem/payeetype"
+                            }
+                        ]
+                    }
+                },
+                "provider": {
+                    "reference": "Organization/gov-9dd4e461268c8034f5c8564e155c67a6"
+                },
+                "related": [
+                    {
+                        "id": "190828379328130",
+                        "relationship": {
+                            "coding": [
+                                {
+                                    "code": "replaced",
+                                    "display": "Replaced claim",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Related-Claim-Relationship.html"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "status": "active",
+                "supportingInfo": [
+                    {
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "brandgenericcode",
+                                    "display": "brandgenericcode",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "brandgenericcode",
+                                    "display": "brandgenericcode",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "valueString": "G"
+                    },
+                    {
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "rxorigincode",
+                                    "display": "rxorigincode",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "rxorigincode",
+                                    "display": "rxorigincode",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "valueString": "T"
+                    },
+                    {
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "refillnum",
+                                    "display": "refillnum",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "refillnum",
+                                    "display": "refillnum",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 3
+                        }
+                    },
+                    {
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "dawcode",
+                                    "display": "dawcode",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "dawcode",
+                                    "display": "dawcode",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "valueString": "0"
+                    },
+                    {
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "clmrecvddate",
+                                    "display": "clmrecvddate",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "clmrecvddate",
+                                    "display": "clmrecvddate",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "timingDate": "2019-03-23"
+                    },
+                    {
+                        "category": {
+                            "coding": [
+                                {
+                                    "code": "dayssupply",
+                                    "display": "dayssupply",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "dayssupply",
+                                    "display": "dayssupply",
+                                    "system": "https://build.fhir.org/ig/HL7/carin-bb/ValueSet-CARIN-BB-Claim-Information-Category.html"
+                                }
+                            ]
+                        },
+                        "_sequence": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 30
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "code": "pharmacy",
+                            "display": "Pharmacy",
+                            "system": "http://hl7.org/fhir/us/carin/CodeSystem/carin-bb-claim-type"
+                        }
+                    ],
+                    "text": "Pharmacy"
+                },
+                "use": "claim",
+                "resourceType": "ExplanationOfBenefit"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Observation/gov-a101e323f7a870d1ea7c7d1bb29fda75",
+            "resource": {
+                "id": "gov-a101e323f7a870d1ea7c7d1bb29fda75",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:31.315000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry"
+                    ],
+                    "source": "GOV#2zJ5mF5liS1JDmd4",
+                    "versionId": "1"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2708-6",
+                            "display": "2708-6",
+                            "system": "http://loinc.org"
+                        },
+                        {
+                            "code": "59408-5",
+                            "display": "59408-5",
+                            "system": "http://loinc.org"
+                        }
+                    ]
+                },
+                "effectiveDateTime": "2016-07-18",
+                "identifier": [
+                    {
+                        "value": "EQE_226010533114862_3335018_LAB_B6AE8D94BE02E002E2E2042E9FF8CE98"
+                    }
+                ],
+                "_status": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "unsupported"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f"
+                },
+                "valueQuantity": {
+                    "code": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "%",
+                    "value": 93.6
+                },
+                "resourceType": "Observation"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Organization/gov-9dd4e461268c8034f5c8564e155c67a6",
+            "resource": {
+                "id": "gov-9dd4e461268c8034f5c8564e155c67a6",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:33:12.202000+00:00",
+                    "profile": [
+                        "http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-organization"
+                    ],
+                    "source": "GOV#EKlAJ8e60Rvy55By",
+                    "versionId": "1"
+                },
+                "active": false,
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-npi",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "NPI"
+                                }
+                            ]
+                        },
+                        "value": "x"
+                    }
+                ],
+                "name": "SUSAN BLAKENEY",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "6012962915"
+                    },
+                    {
+                        "system": "fax",
+                        "value": "6012962918"
+                    }
+                ],
+                "resourceType": "Organization"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Location/gov-2f26caab-536c-4e00-8672-72a6b283fa90",
+            "resource": {
+                "id": "gov-2f26caab-536c-4e00-8672-72a6b283fa90",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:32:54.175000+00:00",
+                    "source": "GOV#2WjZCVYmbo199Oui",
+                    "versionId": "1"
+                },
+                "address": {
+                    "city": "ALAHAMBRA",
+                    "country": "US",
+                    "line": [
+                        "551 WEST MAIN STREET"
+                    ],
+                    "postalCode": "91801",
+                    "state": "CA"
+                },
+                "name": "WALGREENS",
+                "resourceType": "Location"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Patient/evi-Z00000000000001",
+            "resource": {
+                "id": "evi-Z00000000000001",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:19:57.292000+00:00",
+                    "source": "EVI#04InmXorm2J7UoOR",
+                    "versionId": "1"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.5.0-385-ge50db853\n .   Person seed: 5496553533665692336  Population seed: 1598893120799</div>",
+                    "status": "generated"
+                },
+                "address": [
+                    {
+                        "city": "Boston",
+                        "country": "US",
+                        "line": [
+                            "101 Howell Common Suite 56"
+                        ],
+                        "postalCode": "02118",
+                        "state": "Massachusetts"
+                    }
+                ],
+                "birthDate": "2001-10-16",
+                "gender": "female",
+                "identifier": [
+                    {
+                        "system": "https://code.evicore.com/memberid",
+                        "value": "U2313098101"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Villa",
+                        "given": [
+                            "Maria Eugenia"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/DocumentReference/evi-doc-ref-Z00000000000001",
+            "resource": {
+                "id": "evi-doc-ref-Z00000000000001",
+                "meta": {
+                    "lastUpdated": "2022-09-14T17:19:57.435000+00:00",
+                    "source": "EVI#LM5TYOL9bEzNyzuF",
+                    "versionId": "1"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:oid:2.16.840.1.113883.19.5.99999.1-Z00000000000001}</p></div>",
+                    "status": "generated"
+                },
+                "author": [
+                    {
+                        "display": "Test Doctor, MD",
+                        "reference": "Practitioner/evi-practitioner-test-Z00000000000001"
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "clinical-note",
+                                "display": "Clinical Note",
+                                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category"
+                            }
+                        ],
+                        "text": "Clinical Note"
+                    }
+                ],
+                "content": [
+                    {
+                        "attachment": {
+                            "contentType": "text/plain",
+                            "title": "Uri where the data can be found: [base]/Binary/Z00000000000001-note",
+                            "url": "http://example.test/Binary/Z00000000000001-note"
+                        }
+                    }
+                ],
+                "context": {
+                    "period": {
+                        "end": "2021-10-17",
+                        "start": "2021-10-16"
+                    }
+                },
+                "date": "2021-10-16T16:48:55.237000-06:00",
+                "description": "Typical visit",
+                "status": "current",
+                "subject": {
+                    "display": "Test Patient DocumentReference Z00000000000001",
+                    "reference": "Patient/evi-Z00000000000001"
+                },
+                "type": {
+                    "coding": [
+                        {
+                            "code": "34133-9",
+                            "display": "Summary of episode note",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "CCD Document"
+                },
+                "resourceType": "DocumentReference"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://p-hi2.digitaledge.cigna.com/Patient/A00000000000001",
+            "resource": {
+                "id": "A00000000000001",
+                "link": [
+                    {
+                        "other": {
+                            "reference": "Patient/ifp-8972693f-069b-4714-82f9-f805ebf7800f"
+                        },
+                        "type": "seealso"
+                    },
+                    {
+                        "other": {
+                            "reference": "Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f"
+                        },
+                        "type": "seealso"
+                    },
+                    {
+                        "other": {
+                            "reference": "Patient/evi-Z00000000000001"
+                        },
+                        "type": "seealso"
+                    }
+                ],
+                "resourceType": "Patient"
+            }
+        }
+    ],
+    "link": [
+        {
+            "relation": "self",
+            "url": "https://p-hi2.digitaledge.cigna.com/PatientAccess/v1-devportal/Patient/evi-Z00000000000001/$everything?_type=Encounter"
+        }
+    ],
+    "total": 27,
+    "type": "searchset",
+    "resourceType": "Bundle"
+}
