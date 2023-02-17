@@ -8,3 +8,88 @@ secret: d38fa3d0-7f23-48bf-a91b-2f51b6fa7851
 https://r-hi2.cigna.com/hi2-auth-ui/user-consent?scopes=patient/*.read%20openid%20fhirUser&nonce=gowtham&state=123456&client_id=b4e4ba96-09c3-417b-99d2-6ca6a83bd58b
 
 https://r-hi2.cigna.com/mga/sps/oauth/oauth20/authorize?nonce=123456&response_type=code&state=123456&client_id=d34c1090-e568-42d7-ad31-bba1d399dc32&scope=openid fhirUser patient/*.read&redirect_uri=https://example.com
+
+
+{
+  "patient": {
+    "ssn": "123121234",
+    "umid": "nylid",
+    "DoB": "12-12-92",
+    "Name": "firstName lastName"
+  },
+  "displayHospitalizations": true,
+  "hospitalizations": [
+    {
+      "facilityName": "",
+      "admitDate": "",
+      "dischargeDate": "",
+      "code": "",
+      "diagnosis": ""
+    },
+    {
+      "facilityName": "",
+      "admitDate": "",
+      "dischargeDate": "",
+      "code": "",
+      "diagnosis": ""
+    }
+  ],
+  "displaySurgeries": true,
+  "surgeries": [
+    {
+      "procedure": "",
+      "procedureDate": "",
+      "provider": "",
+      "contactInfo": ""
+    },
+    {
+      "procedure": "",
+      "procedureDate": "",
+      "provider": "",
+      "contactInfo": ""
+    }
+  ],
+  "displayProviders": true,
+  "providers": [
+    {
+      "provider": "",
+      "speciality": "",
+      "lastTreatmentDate": "",
+      "contactInfo": ""
+    },
+    {
+      "provider": "",
+      "speciality": "",
+      "lastTreatmentDate": "",
+      "contactInfo": ""
+    }
+  ],
+  "displayPharmacy": true,
+  "pharmacy": [
+    {
+      "medication": "",
+      "category": "",
+      "dosage": "",
+      "lastFilledDate": "",
+      "newPrescription": false
+    },
+    {
+      "medication": "",
+      "category": "",
+      "dosage": "",
+      "lastFilledDate": "",
+      "newPrescription": true
+    }
+  ],
+   "displayCaseMgmt": true,
+  "caseManagement": [
+    {
+      "caseManager": "",
+      "program": "",
+      "startDate": "",
+      "endDate": "",
+      "contact": ""
+    }
+  ],
+  "clinicalNotes": ""
+}
